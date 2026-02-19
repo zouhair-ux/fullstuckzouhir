@@ -1,1 +1,1 @@
-web: gunicorn zadibio_backend_project.wsgi:application
+web: gunicorn zaitouni_backend_project.wsgi:application --bind 0.0.0.0:$PORT
