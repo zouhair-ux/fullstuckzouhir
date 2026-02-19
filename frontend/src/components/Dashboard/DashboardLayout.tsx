@@ -16,6 +16,19 @@ import ZaitounibioLogo from '../ZaitounibioLogo';
 const DashboardLayout: React.FC = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(window.innerWidth > 1024);
 
+    // Add effect to handle resize
+    React.useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth <= 1024) {
+                setIsSidebarOpen(false);
+            } else {
+                setIsSidebarOpen(true);
+            }
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     const { logout } = useAuth();
     const navigate = useNavigate();

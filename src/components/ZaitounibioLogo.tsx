@@ -15,9 +15,16 @@ const ZaitounibioLogo: React.FC<ZaitounibioLogoProps> = ({
     className = '',
     responsive = true,
     inverted = false,
+    withGlow = false,
 }) => {
     // Elegant scaling - slightly larger for impact
     const displayHeight = height * 1.4;
+
+    const glowStyle = withGlow ? {
+        filter: inverted
+            ? 'drop-shadow(0 0 20px rgba(255, 255, 255, 0.4)) brightness(1.3)'
+            : 'drop-shadow(0 0 25px rgba(212, 175, 55, 0.5))'
+    } : {};
 
     return (
         <AnimatePresence mode="wait">
@@ -30,6 +37,7 @@ const ZaitounibioLogo: React.FC<ZaitounibioLogoProps> = ({
                     justifyContent: 'center',
                     padding: '10px',
                     overflow: 'visible',
+                    ...glowStyle
                 }}
             >
                 <div style={{ position: 'relative', display: 'flex', alignItems: 'center' }}>

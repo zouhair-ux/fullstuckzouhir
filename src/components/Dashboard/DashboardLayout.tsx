@@ -25,9 +25,9 @@ const DashboardLayout: React.FC = () => {
                 setIsSidebarOpen(true);
             }
         };
-        // We only want to set initial state or drastic changes, maybe just default false on mobile is enough.
-        // Actually, let's just leave the initial state check.
-        // Moving to event listener might be too aggressive if user manually opened it.
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
     }, []);
     const { logout } = useAuth();
     const navigate = useNavigate();
