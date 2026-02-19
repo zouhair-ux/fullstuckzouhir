@@ -8,7 +8,7 @@ const OilProcess: React.FC = () => {
             icon: <Leaf className="text-primary" size={32} />,
             title: "Récolte Artisanale",
             desc: "Les olives sont cueillies à la main à maturité parfaite pour préserver leur intégrité.",
-            color: "rgba(102, 126, 61, 0.1)"
+            color: "rgba(101, 126, 61, 0.1)"
         },
         {
             icon: <Wind className="text-primary" size={32} />,
