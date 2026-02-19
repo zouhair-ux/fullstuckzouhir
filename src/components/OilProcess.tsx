@@ -196,4 +196,26 @@ const OilProcess: React.FC = () => {
                         gap: '0.5rem'
                     }}
                 >
-                    <Leaf
+                    <Leaf size={18} />
+                    ORIGINE ATTAOUIA
+                </motion.div>
+            </div>
+
+            {/* Background elements */}
+            <div style={{
+                position: 'absolute',
+                top: '20%',
+                right: '-5%',
+                width: '300px',
+                height: '300px',
+                background: 'var(--primary)',
+                opacity: 0.03,
+                borderRadius: '50%',
+                filter: 'blur(80px)',
+                zIndex: 0
+            }} />
+        </section>
+    );
+};
+
+export default OilProcess;
