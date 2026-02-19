@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Leaf, Droplets, Hammer, Wind, ClipboardCheck, Play } from 'lucide-react';
+import { Leaf, Droplets, Hammer, Wind, ClipboardCheck } from 'lucide-react';
 
 const OilProcess: React.FC = () => {
     const phases = [
@@ -196,26 +196,4 @@ const OilProcess: React.FC = () => {
                         gap: '0.5rem'
                     }}
                 >
-                    <Leaf size={18} />
-                    ORIGINE ATTAOUIA
-                </motion.div>
-            </div>
-
-            {/* Background elements */}
-            <div style={{
-                position: 'absolute',
-                top: '20%',
-                right: '-5%',
-                width: '300px',
-                height: '300px',
-                background: 'var(--primary)',
-                opacity: 0.03,
-                borderRadius: '50%',
-                filter: 'blur(80px)',
-                zIndex: 0
-            }} />
-        </section>
-    );
-};
-
-export default OilProcess;
+                    <Leaf
