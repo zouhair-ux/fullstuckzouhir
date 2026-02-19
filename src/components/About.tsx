@@ -139,7 +139,7 @@ const About: React.FC = () => {
                                 }}
                             >
                                 <div style={{
-                                    width: '70px',
+                                    width: '71px',
                                     height: '70px',
                                     borderRadius: '20px',
                                     background: 'var(--primary-light)',
