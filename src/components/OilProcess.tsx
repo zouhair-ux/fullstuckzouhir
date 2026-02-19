@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Leaf, Droplets, Hammer, Wind, ClipboardCheck, Play } from 'lucide-react';
+import { Leaf, Droplets, Hammer, Wind, ClipboardCheck } from 'lucide-react';
 
 const OilProcess: React.FC = () => {
     const phases = [
