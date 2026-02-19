@@ -1,1 +1,1 @@
-web: python -m gunicorn zadibio_backend_project.wsgi:application --bind 0.0.0.0:$PORT
+web: gunicorn zadibio_backend_project.wsgi:application --bind 0.0.0.0:$PORT
